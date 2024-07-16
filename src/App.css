@@ -1,0 +1,129 @@
+/* Estilos globales */
+body {
+  background: linear-gradient(to bottom, #007acc, #000000); /* Gradiente de azul a negro */
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0; 
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(to bottom, #007acc, #000000); /* Gradiente de azul a negro */
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0;
+}
+#root {
+  max-width: 1280px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrando el contenedor */
+  padding: 2rem; /* Espaciado interno */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilos de las tarjetas */
+.card {
+  padding: 2em; /* Espaciado interno de la tarjeta */
+  background-color: #828282; /* Color de fondo oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.905); /* Sombra suave */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandamiento al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(255, 2, 2, 0.5); /* Sombra más intensa al pasar el cursor */
+  transform: scale(1.05) rotate(2deg); /* Rotación ligera */
+}
+
+/* Estilos del formulario */
+.form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  padding: 10px;
+  text-align: center;
+  background-color: #828282;
+  color: #000000; 
+}
+
+.form-control::placeholder {
+  text-align: center;
+  color: #000000;
+}
+
+
+.btn-primary {
+  background-color: #007acc; /* Color de fondo del botón primario */
+  border-color: #005f99; /* Color del borde del botón primario */
+  transition: background-color 0.2s, transform 0.2s; /* Transiciones suaves */
+}
+
+.btn-primary:hover {
+  background-color: #005f99; /* Color de fondo del botón primario al pasar el cursor */
+  transform: scale(1.05); /* Agrandamiento al pasar el cursor */
+}
+
+.btn-danger {
+  background-color: #cc0000; /* Color de fondo del botón de peligro */
+  border-color: #990000; /* Color del borde del botón de peligro */
+  transition: background-color 0.2s, transform 0.2s; /* Transiciones suaves */
+}
+
+.btn-danger:hover {
+  background-color: #990000; /* Color de fondo del botón al pasar el cursor */
+  transform: scale(1.05); /* Agrandamiento al pasar el cursor */
+}
+
+/* Estilos del encabezado */
+h1 {
+  text-align: center; /* Centrado del texto */
+  color: #ffffff; /* Color del texto */
+  margin-bottom: 30px; /* Margen inferior */
+  font-size: 2.5em; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  
+}
+
+/* Estilos del contenedor */
+.container {
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos adicionales */
+.alert-danger {
+  background-color: #4a0000; /* Color de fondo de la alerta */
+  color: #ffffff; /* Color del texto de la alerta */
+  border-color: #990000; /* Color del borde de la alerta */
+}
+
+.form-label {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Margen inferior */
+  }
+
+  h1 {
+    font-size: 2em; /* Tamaño de la fuente reducido */
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-in; /* Animación de desvanecimiento */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }}
+  /* Evitamos que el fondo cambie al hacer clic */
+.form-control:focus {
+  background-color: #828282; /*  fondo oscuro al enfocar */
+}
